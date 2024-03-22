@@ -1,0 +1,29 @@
+<div *ngIf="!screen1" class="container">
+    <div class="row">
+        <div class="row">
+            <div class="col mt-1">  <label>Name</label></div>
+        <div class="col mt-3">
+            <input type="text" name="name" [(ngModel)]="name" class="form-control">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col mt-1">  <label>Email</label></div>
+        <div class="col mt-3">
+            <input type="email" name="mail"  [(ngModel)]="mail" class="form-control">
+        </div>
+    </div> 
+    <div class="row">
+        <div class="col mt-1">  <label>Mobile</label></div>
+        <div class="col mt-1">
+            <input type="number" name="mobile"  [(ngModel)]="mNumber" class="form-control">
+        </div>
+    </div>
+   
+    <div class="row mt-1">
+        <div class="col">
+            <input type="button" name="register" value="Register" (click)="simpleSubmit()" class="btn btn-success">
+        </div>
+    </div>
+    
+</div></div>
+
